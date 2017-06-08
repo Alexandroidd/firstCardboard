@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src='js/controller.js'></script>
+ 
+	<title></title>
+</head>
+<body>
+
+
+<h1>Welcome to 3D Party People</h1>
+
+<form id='form' method="get" action="worldPage.html">>
+	<label>Select Your Character</label>
+	<select name="characters" id='character'>
+  		<option value="Goat">Goat</option>
+      <option value='Rat'>Rat</option>
+      <option value='Rhino'>Rhino</option>
+	</select><br><br>
+	<label>Choose A Name</label><br>
+	<textarea placeholder="Type your name here" id='name'></textarea><br><br>
+  <label>Choose A Saying</label><br>
+  <textarea placeholder='Type your saying here' id='saying'></textarea><br>
+  <input type='submit' value='Submit' id='submit'>
+
+</form>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase-app.js"></script> -->
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: 'AIzaSyBXlW_OcuWYsvQLHHYhYAs6ofEGHAFNRFU' || process.env.API_KEY,
+    authDomain: "d-people-party.firebaseapp.com",
+    databaseURL: "https://d-people-party.firebaseio.com",
+    projectId: "d-people-party",
+    storageBucket: "d-people-party.appspot.com",
+    messagingSenderId: "165937787354"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
